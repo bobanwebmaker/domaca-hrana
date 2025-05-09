@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranica nije pronađena | Domaće kiflice i štrudle</title>
+    <meta name="description" content="Tražena stranica ne postoji. Vratite se na početnu stranicu ili istražite naše domaće kiflice i štrudle.">
+    
+    <!-- Favicon (koristite iste kao na glavnom sajtu) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-domace-logo-180w.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logos/favicon-domace-logo-32w.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logos/favicon-domace-logo-16w.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Add Google Fonts for Lora and DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Lora:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- CSS (možete koristiti isti CSS kao na glavnom sajtu) -->
+    <style>
+        @font-face {
+  font-family: lexend;
+  src: url(fonts/Lexend/LexendZetta-Light.ttf);
+}
+@font-face {
+  font-family: mrs_saint;
+  src: url(fonts/Mrs_Saint_Delafield/MrsSaintDelafield-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background-color: #f9f5f0;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+        }
+        
+        h1 {
+            font-family: 'Lora', serif;
+            color: #d4a76a;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-family: "DM Sans", sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .error-code {
+            font-family: 'Lora', serif;
+            font-size: 6rem;
+            font-weight: 800;
+            color: #e8c07d;
+            margin: 1rem 0;
+            text-shadow: #333333 3px 3px 3px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #d4a76a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+        
+        .btn:hover {
+            background-color: #b38b5a;
+            transform: translateY(-2px);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: #341f06;
+            color: white;
+            padding: 1.5rem;
+            margin-top: auto;
+        }
+        
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright p {
+  color: #fff;
+  font-size: .93rem;
+}
+copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+.copyright .designed11 {
+  font-size: 12px;
+  font-family: lexend;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -2px;
+  color: turquoise;
+  margin: 0;
+  transition: 0.5s;
+}
+.copyright .designed11:hover {
+  transform: scale(0.95);
+}
+.copyright .designed11 span {
+  font-size: 30px;
+  font-family: mrs_saint;
+  text-align: center;
+  color: gold;
+  transition: 0.5s;
+}
+.copyright .designed11:hover span {
+  transform: scale(0.95);
+}
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .error-code { font-size: 4rem; }
+            p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1>Ups! Stranica koju tražite nije pronađena</h1>
+        <p>Izgleda da se stranica koju pokušavate da posetite premestila ili ne postoji. Ali ne brinite - naše sveže kiflice i štrudle su uvek dostupne!</p>
+        
+        <div>
+            <a href="index.html" class="btn">Vratite se na početnu</a>
+            <a href="cene.html" class="btn">Pogledajte naš cenovnik</a>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="slike/domace-kiflice-novi-beograd-1.jpg" alt="Domaće kiflice sa sirom">
+                <h3>Kiflice sa sirom</h3>
+            </div>
+            <div class="product-card">
+                <img src="slike/strudla-sa-makom-2.jpg" alt="Štrudla sa makom">
+                <h3>Štrudla sa makom</h3>
+            </div>
+            <div class="product-card">
+                <img src="slike/strudla-sa-orasima-1.jpg" alt="Štrudla sa orasima">
+                <h3>Štrudla sa orasima</h3>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+            <div class="copyright">
+                <p>&copy; 2025 Domaće. Sva prava zadržana.</p>
+                <a href="https://bobanwebmaker.com/"  target="_blank" rel="noopener noreferrer"  class="website-napravio trackbobanweb"><div class="designed11">Designed&nbsp;<span>by</span>&nbsp;Boban</div></a>
+            </div>
+    </footer>
+</body>
+</html>
