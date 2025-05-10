@@ -73,6 +73,8 @@ AddDefaultCharset UTF-8
 <IfModule mod_headers.c>
     Header set Connection keep-alive
 </IfModule>
+#  Sigurnosne postavke
+ServerSignature Off
 
 # Custom 404 error page
 ErrorDocument 404 /404.html
