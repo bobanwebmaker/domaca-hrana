@@ -1520,6 +1520,17 @@ button,
 .copyright p {
   text-align: center;
 }
+  .category-tab {
+  padding: 0.8rem 0.8rem;
+  width: 155px;
+  font-size: 13px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+  #circle { 
+    display:none;
+  }
 }
 
 /* Animation for fade-in elements */
