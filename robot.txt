@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: 
-Sitemap: https://domaca-hrana.com/sitemap.xml
