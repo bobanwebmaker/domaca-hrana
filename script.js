@@ -344,7 +344,7 @@ const observer = new IntersectionObserver((entries) => {
 
   // Praćenje klikova na .trackcall dugmad - slanje na eksterni server
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('.pozovi').forEach(function (a) {
+  document.querySelectorAll('.trackcall').forEach(function (a) {
     a.addEventListener('click', function () {
       const payload = JSON.stringify({ time: new Date().toISOString(), call: 1 });
 
