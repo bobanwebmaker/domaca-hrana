@@ -340,5 +340,26 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
+
+
+  // Praćenje klikova na .trackcall dugmad - slanje na eksterni server
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.pozovi').forEach(function (a) {
+    a.addEventListener('click', function () {
+      const payload = JSON.stringify({ time: new Date().toISOString(), call: 1 });
+
+      fetch('https://bobanwebmaker.com/private/domaca-hrana.php', {
+        method: 'POST',
+        // text/plain => "simple request" => nema OPTIONS preflight-a
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+        body: payload,
+        keepalive: true
+      })
+      .then(async (r) => console.log("TRACK:", r.status, await r.text()))
+      .catch((e) => console.log("TRACK ERR:", e));
+    });
+  });
+});
 $divs.forEach(div => observer.observe(div));
 });
+
