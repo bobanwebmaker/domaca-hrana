@@ -1599,3 +1599,7 @@ html {
     clip-path: inset(0px 0px round 12px);
   }
 }
+.trackcall svg,
+.trackcall svg * {
+  pointer-events: none;
+}
