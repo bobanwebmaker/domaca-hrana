@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   // Navigation Toggle
   const hamburger = document.querySelector(".hamburger")
   const nav = document.querySelector(".nav")
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         counter.innerText = Math.ceil(count + inc)
         setTimeout(animateCounters, 1)
       } else {
-        counter.innerText = target
+        counter.innerText = target;
       }
     })
   }
@@ -254,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-});
+
 
 
 // INTERACTIVE CURSOR
@@ -314,6 +315,7 @@ $divs.forEach((div) => {
     onDiv = true;
     hoveringDiv = div;
   });
+  });
 
   div.addEventListener("mouseleave", (evt) => {
     if (hoveringDiv === div) {
@@ -343,7 +345,6 @@ const observer = new IntersectionObserver((entries) => {
 
 
 // Praćenje klikova na .trackcall dugmad - slanje na eksterni server
-document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".trackcall").forEach(function (el) {
     el.addEventListener("click", function () {
       const payload = JSON.stringify({
@@ -359,4 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }).catch(() => {});
     });
   });
+
+
+
 });
