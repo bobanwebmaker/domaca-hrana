@@ -324,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
         targetY = evt.clientY + window.scrollY - $circle.offsetHeight / 2;
       }
     });
-  }); // <-- OVA ZAGRADA JE NEDOSTAJALA!
+  }); // <-- Ova zagrada je bila problem
 
   // Koristite Intersection Observer za elemente koji nisu u viewportu
   const observer = new IntersectionObserver((entries) => {
@@ -337,6 +337,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, { threshold: 0.1 });
+
+  // OVO JE KLJUČNO: Povezivanje observera sa div elementima
+  $divs.forEach(div => {
+    observer.observe(div);
+  });
 
   // Praćenje klikova na .trackcall dugmad - slanje na eksterni server
   document.querySelectorAll(".trackcall").forEach(function (el) {
